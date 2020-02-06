@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Project Pag-Apil</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,34 +47,69 @@
     <div class="jumbotron jumbotron-fluid"
         style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.aljazeera.com/mritems/Images/2018/7/22/c19be0615f794d118ac164ab60a28bdd_18.jpg'); background-size: cover;">
         <div class="container" style="color: #fff; text-shadow: 2px 2px 4px #000000;">
-            <h1 class="display-4">Project Pag-Apil</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <h1 class="display-4 text-center">Project Pag-Apil</h1>
+            <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         </div>
     </div>
     <div class="container-fluid">
-        <div class='tableauPlaceholder' id='viz1580993278808' style='position: relative'>
-            <noscript>
-                <a href='#'>
-                    <img alt=''
-                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;Bangsamoro_Data_Updated&#47;Welcome&#47;1_rss.png'
-                        style='border: none' />
-                </a>
-            </noscript>
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='Bangsamoro_Data_Updated&#47;Welcome' />
-                <param name='tabs' value='yes' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image'
-                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;Bangsamoro_Data_Updated&#47;Welcome&#47;1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-            </object>
+        <div style="margin: 0 auto; width: 1390px; margin-top: -30px;">
+            <div class='tableauPlaceholder' id='viz1580993278808' style='position: relative;'>
+                <noscript>
+                    <a href='#'>
+                        <img alt=''
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;Bangsamoro_Data_Updated&#47;Welcome&#47;1_rss.png'
+                            style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Bangsamoro_Data_Updated&#47;Welcome' />
+                    <param name='tabs' value='yes' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;Bangsamoro_Data_Updated&#47;Welcome&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                </object>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card" style="border-radius: 15px; ">
+                        <div class="card-img-top"
+                            style="background: url('https://www.aljazeera.com/mritems/Images/2018/7/22/c19be0615f794d118ac164ab60a28bdd_18.jpg'); background-size: cover; height: 400px;">
+                        </div>
+                        <!-- <img class="card-img-top" src="static/Colorizer.jpg" alt="Card image cap" style="border-radius: 15px 15px 0 0;"> -->
+                        <div class="card-body">
+                            <h2 class="card-title" style="font-weight: bold;">Volunteer</h2>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="{{ url_for('colorizer_home') }}" class="btn btn-primary btn-lg"
+                                style="border-radius: 50px; background-color: #3973B1; border: none; font-weight: bold;">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-img-top"
+                        style="background: url('https://assets.rappler.com/4DC8D2D144F44ACAAC14318CFF7AAB7B/img/2F5CEF2688B34BAC98C9949EBEEDA6BE/bol-peace-assembly-jan182019-001.jpg'); background-size: cover; height: 400px;">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title" style="font-weight: bold;">Contribute</h2>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="{{ url_for('stylize_home') }}" class="btn btn-primary btn-lg"
+                                style="border-radius: 50px; background-color: #3973B1; border: none; font-weight: bold;">Send Data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script type='text/javascript'>
             var divElement = document.getElementById('viz1580993278808');
@@ -90,7 +125,7 @@
                 vizElement.style.minHeight = '1318px';
                 vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
             } else {
-                vizElement.style.width = '100%';
+                vizElement.style.width = '1366px';
                 vizElement.style.minHeight = '1650px';
                 vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px';
             }
