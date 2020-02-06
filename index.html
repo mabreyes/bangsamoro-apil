@@ -45,7 +45,12 @@
             font-size: 80%;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-weight: bold !important;
         }
     </style>
@@ -129,9 +134,10 @@
                             <h2 class="card-title" style="font-weight: bold;">Volunteer</h2>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="{{ url_for('colorizer_home') }}" class="btn btn-primary btn-lg"
+                            <button class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#exampleModalCenter1"
                                 style="border-radius: 50px; background-color: #3973B1; border: none; font-weight: bold;">Sign
-                                Up</a>
+                                Up</button>
                         </div>
                     </div>
                 </div>
@@ -144,10 +150,58 @@
                             <h2 class="card-title" style="font-weight: bold;">Contribute</h2>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="{{ url_for('stylize_home') }}" class="btn btn-primary btn-lg"
+                            <button class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#exampleModalCenter2"
                                 style="border-radius: 50px; background-color: #3973B1; border: none; font-weight: bold;">Send
                                 Data</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Volunteer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input class="form-control form-control" type="text" placeholder="First Name" style="margin-bottom: 10px;">
+                        <input class="form-control form-control" type="text" placeholder="Last Name" style="margin-bottom: 10px;">
+                        <input class="form-control form-control" type="email" placeholder="E-mail Address" style="margin-bottom: 10px;">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Why do you want to join?"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Contribute</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input class="form-control form-control" type="text" placeholder="First Name" style="margin-bottom: 10px;">
+                        <input class="form-control form-control" type="text" placeholder="Last Name" style="margin-bottom: 10px;">
+                        <input class="form-control form-control" type="email" placeholder="E-mail Address" style="margin-bottom: 10px;">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" style="margin-bottom: 10px;">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Brief description of file submission"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -177,9 +231,9 @@
     </div>
     <footer class="footer">
         <div class="container-fluid" style="margin: 0 auto; width: 1390px;">
-          <span class="text-muted">&copy; 2020 by Prince Javier, Marc Reyes, and Jairus Paul</span>
+            <span class="text-muted">&copy; 2020 by Prince Javier, Marc Reyes, and Jairus Paul</span>
         </div>
-      </footer>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
