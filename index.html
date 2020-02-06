@@ -11,6 +11,38 @@
 </head>
 
 <body>
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 60px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            background-color: #f5f5f5;
+        }
+
+        body>.container {
+            padding: 60px 15px 0;
+        }
+
+        .footer>.container {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        code {
+            font-size: 80%;
+        }
+    </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Project Pag-Apil</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -48,7 +80,8 @@
         style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.aljazeera.com/mritems/Images/2018/7/22/c19be0615f794d118ac164ab60a28bdd_18.jpg'); background-size: cover;">
         <div class="container" style="color: #fff; text-shadow: 2px 2px 4px #000000;">
             <h1 class="display-4 text-center">Project Pag-Apil</h1>
-            <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal space of its
+                parent.</p>
         </div>
     </div>
     <div class="container-fluid">
@@ -67,7 +100,7 @@
                     <param name='site_root' value='' />
                     <param name='name' value='Bangsamoro_Data_Updated&#47;Welcome' />
                     <param name='tabs' value='yes' />
-                    <param name='toolbar' value='yes' />
+                    <param name='toolbar' value='no' />
                     <param name='static_image'
                         value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;Bangsamoro_Data_Updated&#47;Welcome&#47;1.png' />
                     <param name='animate_transition' value='yes' />
@@ -78,8 +111,8 @@
                 </object>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid" style="margin: 0 auto; width: 1390px; margin-top: -30px; padding-bottom: 50px;">
+            <div class="row" style="margin-top: -30px;">
                 <div class="col-6">
                     <div class="card" style="border-radius: 15px; ">
                         <div class="card-img-top"
@@ -91,21 +124,23 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                             <a href="{{ url_for('colorizer_home') }}" class="btn btn-primary btn-lg"
-                                style="border-radius: 50px; background-color: #3973B1; border: none; font-weight: bold;">Sign Up</a>
+                                style="border-radius: 50px; background-color: #3973B1; border: none; font-weight: bold;">Sign
+                                Up</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="card" style="border-radius: 15px;">
                         <div class="card-img-top"
-                        style="background: url('https://assets.rappler.com/4DC8D2D144F44ACAAC14318CFF7AAB7B/img/2F5CEF2688B34BAC98C9949EBEEDA6BE/bol-peace-assembly-jan182019-001.jpg'); background-size: cover; height: 400px;">
+                            style="background: url('https://assets.rappler.com/4DC8D2D144F44ACAAC14318CFF7AAB7B/img/2F5CEF2688B34BAC98C9949EBEEDA6BE/bol-peace-assembly-jan182019-001.jpg'); background-size: cover; height: 400px;">
                         </div>
                         <div class="card-body">
                             <h2 class="card-title" style="font-weight: bold;">Contribute</h2>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                             <a href="{{ url_for('stylize_home') }}" class="btn btn-primary btn-lg"
-                                style="border-radius: 50px; background-color: #3973B1; border: none; font-weight: bold;">Send Data</a>
+                                style="border-radius: 50px; background-color: #3973B1; border: none; font-weight: bold;">Send
+                                Data</a>
                         </div>
                     </div>
                 </div>
@@ -134,6 +169,11 @@
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
     </div>
+    <footer class="footer">
+        <div class="container">
+          <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+      </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
