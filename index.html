@@ -21,8 +21,14 @@
         body {
             font-family: 'Gordita', Helvetica, sans-serif;
             margin-bottom: 60px;
-            background: #eeeeee;
+            /* background: #eeeeee; */
         }
+
+        footer a, footer a:hover {
+            color: #006a4e !important;
+        }
+
+
 
         .footer {
             position: absolute;
@@ -55,7 +61,7 @@
             font-weight: bold !important;
         }
     </style>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background: #006a4e !important;">
         <a class="navbar-brand" href="#" style="font-weight: bold;">Project Pag-Apil</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,13 +70,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Contribute</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter1">Volunteer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Feedback</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter2">Contribute</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter3">Feedback</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
@@ -97,7 +103,7 @@
     </div>
     <div class="container-fluid">
         <div style="margin: 0 auto; width: 1390px; margin-top: -30px;">
-            <div class='tableauPlaceholder' id='viz1580993278808' style='position: relative; border-radius: 15px;'>
+            <div class='tableauPlaceholder' id='viz1580993278808' style='position: relative; background: transparent;'>
                 <noscript>
                     <a href='#'>
                         <img alt=''
@@ -125,7 +131,7 @@
         <div class="container-fluid" style="margin: 0 auto; width: 1390px; margin-top: -30px; padding-bottom: 50px;">
             <div class="row" style="margin-top: -30px;">
                 <div class="col-4">
-                    <div class="card" style="border-radius: 15px; ">
+                    <div class="card" style="border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                         <div class="card-img-top"
                             style="background: url('https://www.aljazeera.com/mritems/Images/2018/7/22/c19be0615f794d118ac164ab60a28bdd_18.jpg'); background-size: cover; height: 400px; border-radius: 15px 15px 0 0;">
                         </div>
@@ -135,13 +141,13 @@
                             <p class="card-text">We are looking for volunteers to help make the data and insights relevant and up-to-date.</p>
                             <button class="btn btn-primary btn-lg" data-toggle="modal"
                                 data-target="#exampleModalCenter1"
-                                style="border-radius: 50px; background-color: #3973B1; border: none; font-weight: bold;">Sign
+                                style="border-radius: 50px; background-color: #006a4e; border: none; font-weight: bold;">Sign
                                 Up</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card" style="border-radius: 15px;">
+                    <div class="card" style="border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                         <div class="card-img-top"
                             style="background: url('https://assets.rappler.com/4DC8D2D144F44ACAAC14318CFF7AAB7B/img/2F5CEF2688B34BAC98C9949EBEEDA6BE/bol-peace-assembly-jan182019-001.jpg'); background-size: cover; height: 400px; border-radius: 15px 15px 0 0;">
                         </div>
@@ -150,13 +156,13 @@
                             <p class="card-text">Contribute datasets and other information for this project.</p>
                             <button class="btn btn-primary btn-lg" data-toggle="modal"
                                 data-target="#exampleModalCenter2"
-                                style="border-radius: 50px; background-color: #3973B1; border: none; font-weight: bold;">Send
+                                style="border-radius: 50px; background-color: #006a4e; border: none; font-weight: bold;">Send
                                 Data</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card" style="border-radius: 15px;">
+                    <div class="card" style="border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                         <div class="card-img-top"
                             style="background: url('https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/DD8A819604C84F02B0DE388272FC1107/20150213-bangsamoro-rappler-file.jpg'); background-size: cover; height: 400px; border-radius: 15px 15px 0 0;">
                         </div>
@@ -165,7 +171,7 @@
                             <p class="card-text">We welcome your comments and suggestions to help improve this project.</p>
                             <button class="btn btn-primary btn-lg" data-toggle="modal"
                                 data-target="#exampleModalCenter3"
-                                style="border-radius: 50px; background-color: #3973B1; border: none; font-weight: bold;">Comment</a>
+                                style="border-radius: 50px; background-color: #006a4e; border: none; font-weight: bold;">Comment</a>
                         </div>
                     </div>
                 </div>
